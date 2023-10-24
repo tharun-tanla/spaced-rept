@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import SummaryView from '../views/SummaryView.vue'
-
+import LoginPage from '../components/LoginPage.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -15,6 +15,11 @@ const routes = [
     path: '/summary',
     name: 'Summary',
     component: SummaryView
+  },
+  {
+    path: '/Login',
+    name: 'LoginPage',
+    component: LoginPage
   },
   {
     path: '/about',
